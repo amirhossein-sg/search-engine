@@ -8,7 +8,7 @@ from pymongo import MongoClient
 
 client = MongoClient('localhost', 27017)
 db = client.SearchEngine
-link_list = []
+link_list: List = []
 
 
 def word_separator(words: AnyStr):
